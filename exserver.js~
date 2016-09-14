@@ -6,5 +6,5 @@ app.get('/',function (reg,res){
 app.get('/about',function (reg,res){
 	res.send('heloo you r using express  for connecting to the server');
 })
-app.listen(4040);
+app.listen(8080);
 

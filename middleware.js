@@ -1,17 +1,6 @@
 var express= require('express');
 var app=express();
-var middeleware={
-	requireAuthentication: function(req,res,next){
-		console.log('you doing authentication!')
-		next();
-	},
-	logger:function(req, res, next){
-	console.log('request '+new Date().toString()+req.method+' '+req.originalUrl);
-	next();
-}
-
-	
-};
+var middeleware=require('./middleware1.js')
 
 app.use(middeleware.logger);
 

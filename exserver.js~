@@ -4,7 +4,7 @@ app.get('/',function (reg,res){
 	res.send('heloo you r using express for runing the server');
 })
 app.get('/about',function (reg,res){
-	res.send('heloo you r using express for about the server!');
+	res.send('heloo you r using express for about the server');
 })
 app.listen(4040);
 
